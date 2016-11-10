@@ -1,0 +1,20 @@
+<H1>blocks are cool</H1>
+<p>
+    <div class="input-group">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-primary" ng-click="refresh()">
+                <span class="glyphicon glyphicon-refresh"></span>&nbsp;<span>Refresh</span>
+            </button>
+            <button type="button" class="btn btn-warning" ng-click="pop()">
+                <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Pop last</span>
+            </button>
+        </span>
+        <input type="text" class="form-control" ng-model="newBlock">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-primary" ng-click="add()">
+                <span class="glyphicon glyphicon-plus"></span>&nbsp;<span>Add</span>
+            </button>
+        </span>
+    </div>
+</p>
+<li ng-repeat="item in list">{{item}}</ling>
